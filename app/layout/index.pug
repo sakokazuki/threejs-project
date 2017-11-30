@@ -1,0 +1,32 @@
+extends ./partials/head
+
+block vars
+  - var title = data.data.meta.title
+
+block viewport
+
+  meta#viewport(name="viewport", content="width=device-width, initial-scale=1")
+
+block style
+  link(rel="stylesheet" type="text/css" href="styles/main.css")
+
+block script
+  script(src="js/sub.js")
+  script(src="js/app.js")
+
+block content
+  //- h1 テストページ
+  //- h2=`env: ${env.env}`
+
+  #app
+  #gui
+  //- .pc-image
+  //- .sp-image
+
+
+
+
+
+
+
+

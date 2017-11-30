@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title":"ページタイトル",
+    "description":"ディスクリプション",
+    "keywords":"キーワード",
+    "share":"シェアタイトル",
+    "url":"シェアurl",
+    "ogimg":"http://hoge.com/img/ogimg.png"
+  }
+}

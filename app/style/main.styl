@@ -1,0 +1,53 @@
+@import "./utils/_reset"
+@import "./utils/_mixins"
+@import "./utils/_animation"
+
+@import "./components/_pc-sprite"
+@import "./components/_sp-sprite"
+$spW = $spritesheet_width
+sp-spriteWidth($sprite) {
+  width: ($sprite[4]/2);
+}
+
+sp-spriteHeight($sprite) {
+  height: ($sprite[5]/2);
+}
+
+sp-spritePosition($sprite) {
+  background-position: ($sprite[2]/2) ($sprite[3]/2);
+}
+
+sp-spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sp-sprite($sprite) {
+  sp-spriteImage($sprite)
+  sp-spritePosition($sprite)
+  sp-spriteWidth($sprite)
+  sp-spriteHeight($sprite)
+  background-size: ($spW/2) auto
+}
+
+
+$font= "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", sans-serif;
+
+html, body, #app
+  width: 100%
+  height: 100%
+
+#gui
+  width: 250px;
+  position: absolute;
+  right: 300px;
+  top: 0;
+
+#stats
+  position: fixed
+  left: 0
+  top: 0
+.pc-image
+  sprite($pc_sprite_test1)
+.sp-image
+  sp-sprite($sp_sprite_test3, $spW)
+

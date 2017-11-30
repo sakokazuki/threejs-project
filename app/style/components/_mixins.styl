@@ -1,0 +1,130 @@
+@keyframes blink {
+  0% { opacity: 0; }
+  19.9% { opacity: 0; }
+  20% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+blink(interval)
+  animation: interval linear 0s alternate none infinite running
+  animation-name: blink  
+  
+rotationZ(time, mode, min, max, query)
+  
+  @keyframes rZ{query}
+    0% { transform: rotateZ(min) }
+    100% { transform: rotateZ(max) }
+  
+  
+  animation: time linear 0s mode none infinite running
+  animation-name: rZ+query
+
+  
+rotationZStop(time, mode, min, max, query)
+  @keyframes rZ{query}
+    0% { transform: rotateZ(0deg) }
+    89.9% { transform: rotateZ(0deg) }
+    90% { transform: rotateZ(min) }
+    95% { transform: rotateZ(max) }
+    100% { transform: rotateZ(0deg) }
+  
+  
+  animation: time linear 0s mode none infinite running
+  animation-name: rZ+query
+  
+rotationXStop(time, query){
+  @keyframes rXS{query}{
+    0% { transform: rotateX(0deg)}
+    80% { transform: rotateX(0deg)}
+    100% { transform: rotateX(360deg)}
+  }
+  animation: time linear 0s normal none infinite running
+  animation-name: rXS + query
+}
+
+rotationX(time, query){
+  @keyframes rX{query}{
+    0% { transform: rotateX(0deg)}
+    100% { transform: rotateX(360deg)}
+  }
+  animation: time linear 0s normal none infinite running
+  animation-name: rX + query
+}
+
+rotationY(time, query){
+  @keyframes rY{query}{
+    0% { transorm: rotateY(0deg)}
+    100% { transform: rotateY(360deg)}
+  }
+  animation: time linear 0s normal none infinite running
+  animation-name: rY + query
+}
+
+
+moveX(time, start, end, query){
+  @keyframes tX{query}{
+    0% { transform: translateX(start)}
+    100% { transform: translateX(end)}
+  }
+  animation: time linear 0s alternate none infinite running
+  animation-name: tX + query
+}
+
+moveXANDRotateX(time, start, end, query){
+  @keyframes trX{query}{
+    0% { transform: translateX(start) rotateX(0deg)}
+    50% { transform: translateX(end) rotateX(180deg)}
+    100% { transform: translateX(start) rotateX(360deg)}
+  }
+  animation: time linear 0s alternate none infinite running
+  animation-name: trX + query
+}
+
+
+  
+scaling(time, query){
+  @keyframes scalingAnim{query}{
+    0% { transform: scale(1.0)}
+    29.9% { transform: scale(1.0)}
+    30% { transform: scale(0.3)}
+    59.9% { transform: scale(0.3)}
+    60% { transform: scale(0.6)}
+    99.9% { transform: scale(0.6)}
+    100% { transform: scale(1.0)}
+  }
+  animation: time linear 0s normal none infinite running
+  animation-name: scalingAnim + query
+}
+
+scalingTwice(time, query){
+  @keyframes scalingAnimTwice{query}{
+    0% { transform: scale(1.0)}
+    59.9% { transform: scale(1.0)}
+    60% { transform: scale(0.7)}
+    99.9% { transform: scale(0.7)}
+    100% { transform: scale(1.0)}
+  }
+  animation: time linear 0s normal none infinite running
+  animation-name: scalingAnimTwice + query
+}
+
+blinkBg(time, sprite1, sprite2,query){
+  @keyframes blinkBgAnim{query}{
+    0% { background-position: sprite1[2] sprite1[3]}
+    69.9% { background-position: sprite1[2] sprite1[3]}
+    70% { background-position: sprite2[2] sprite2[3]}
+    99.9% { background-position: sprite2[2] sprite2[3]}
+    100% { background-position: sprite1[2] sprite1[3]}
+  }
+  animation: time linear 0s normal none infinite running
+  animation-name: blinkBgAnim + query
+}
+
+
+
+
+
+
+
+
+
