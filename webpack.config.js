@@ -25,7 +25,7 @@ module.exports = {
         }
       },
       {
-       test: /\.glsl$/,
+       test: /\.(glsl|frag|vert)$/,
        loader: 'shader-loader',
       },
       {
