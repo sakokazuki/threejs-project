@@ -6,7 +6,7 @@ export default class TestScene extends SceneBase{
   constructor(){
     super();
 
-    this.camera = new THREE.PerspectiveCamera(30, this.aspect, 0.2, 2000);
+    this.camera = new THREE.PerspectiveCamera(30, 16/9, 0.2, 2000);
     this.camera.position.set(0, 0, 2);
     this.camera.lookAt(new THREE.Vector3(0, 0, 0));
 
