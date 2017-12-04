@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import SceneBase from 'modules/scene/scene-base'
+import SceneBase from 'scene/scene-base'
 
 
 export default class TestScene extends SceneBase{

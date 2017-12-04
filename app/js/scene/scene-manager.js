@@ -11,10 +11,10 @@ import CopyShader from 'imports-loader?THREE=three!exports-loader?THREE.CopyShad
 import ShaderPass from 'imports-loader?THREE=three!exports-loader?THREE.ShaderPass!three-extras/postprocessing/ShaderPass'
 import OrbitControls from 'imports-loader?THREE=three!exports-loader?THREE.OrbitControls!three-extras/controls/OrbitControls'
 //original
-import AppBase from 'modules/common/app-base'
-import Ticker from 'modules/common/ticker'
-import TestScene from 'modules/scene/test-scene'
-import GUIManager from 'modules/gui-manager'
+import AppBase from 'common/app-base'
+import Ticker from 'common/ticker'
+import TestScene from 'scene/test-scene'
+import GUIManager from 'gui/gui-manager'
 
 class SceneManager extends AppBase{
   constructor(){

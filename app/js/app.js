@@ -1,6 +1,6 @@
 import $ from 'jquery'
 import 'babel-polyfill'
-import SceneManager from 'modules/scene-manager'
+import SceneManager from 'scene/scene-manager'
 
 
 class App{

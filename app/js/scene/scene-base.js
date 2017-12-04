@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import Ticker from 'modules/common/ticker'
+import Ticker from 'common/ticker'
 
 export default class SceneBase extends THREE.Scene{
   constructor(){
