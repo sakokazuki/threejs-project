@@ -27,7 +27,7 @@
     "del": "^2.2.2",
     "exports-loader": "^0.6.4",
     "fs": "^0.0.1-security",
-    "gsap": "^1.19.1",
+    "gsap": "^3.6.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.6.0",
