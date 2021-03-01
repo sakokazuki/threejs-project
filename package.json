@@ -61,7 +61,7 @@
   "dependencies": {
     "EventEmitter": "^1.0.0",
     "jquery": "^3.2.1",
-    "three": "^0.88.0",
+    "three": "^0.125.0",
     "tweakpane": "^0.1.3"
   }
 }
