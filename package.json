@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "async": "^2.6.0",
+    "async": "^2.6.4",
     "aws-sdk": "^2.156.0",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
